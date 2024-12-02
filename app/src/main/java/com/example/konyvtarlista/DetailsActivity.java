@@ -47,7 +47,7 @@ public class DetailsActivity extends AppCompatActivity {
 
 
         Random random = new Random();
-        int randomYear = 1900 + random.nextInt(123);
+        int randomYear = 1000 + random.nextInt(123);
         textViewYear.setText("Kiadási év: " + randomYear);
 
 

@@ -8,7 +8,13 @@
     android:orientation="vertical"
     tools:context=".DetailsActivity">
 
-
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:orientation="vertical">
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="match_parent"
@@ -37,11 +43,14 @@
         android:textSize="14sp"
         android:text="Kiadási év" />
 
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vissza" />
 
-    <Button
-        android:id="@+id/buttonBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vissza" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
 
 </LinearLayout>

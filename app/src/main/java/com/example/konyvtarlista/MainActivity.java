@@ -41,11 +41,9 @@ public class MainActivity extends AppCompatActivity {
         buttonAdd = findViewById(R.id.buttonAdd);
         listViewBooks = findViewById(R.id.listViewBooks);
 
-
         bookList = new ArrayList<>();
         adapter = new BookAdapter(this, bookList);
         listViewBooks.setAdapter(adapter);
-
 
         buttonAdd.setOnClickListener(v -> {
             String title = editTextTitle.getText().toString();
@@ -74,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
             bookList.add(newBook);
             adapter.notifyDataSetChanged();
 
-
             editTextTitle.setText("");
             editTextAuthor.setText("");
             editTextPages.setText("");
@@ -91,17 +88,5 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        listViewBooks.setOnItemLongClickListener((parent, view, position, id) -> {
-            new AlertDialog.Builder(MainActivity.this)
-                    .setTitle("Törlés")
-                    .setMessage("Biztosan törölni akarja a könyvet?")
-                    .setPositiveButton("Igen", (dialog, which) -> {
-                        bookList.remove(position);
-                        adapter.notifyDataSetChanged();
-                    })
-                    .setNegativeButton("Nem", null)
-                    .show();
-            return true;
-        });
     }
 }

@@ -25,13 +25,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="12sp" />
+    </LinearLayout>
 
         <Button
             android:id="@+id/buttonDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Törlés" />
+            android:text="Törlés"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_gravity="right"/>
 
-    </LinearLayout>
+
 
 </androidx.cardview.widget.CardView>

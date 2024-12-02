@@ -32,7 +32,8 @@
         android:id="@+id/buttonAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hozzáadás" />
+        android:text="Hozzáadás"
+        android:layout_gravity="center"/>
 
     <ListView
         android:id="@+id/listViewBooks"
